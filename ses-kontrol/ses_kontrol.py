@@ -1,4 +1,5 @@
-"""Paydos Usta ses kontrolü: her kaydın ses profilini çıkarır ve referansla karşılaştırır.
+"""NOT: Perde kaydırma (ses_esitle.py) yankı yaptığı için KULLANILMIYOR. Tutarsız kayıt yeniden üretilir.
+Paydos Usta ses kontrolü: her kaydın ses profilini çıkarır ve referansla karşılaştırır.
 Kullanım: python3 ses_kontrol.py ref.mp3 aday1.mp3 [aday2.mp3 ...]
 Ölçülenler: perde (ortanca + oynaklık), konuşma hızı (hece/sn), tını (spektral merkez), enerji dinamiği, duraklama oranı.
 """
@@ -28,7 +29,13 @@ def profile(f):
     env = librosa.onset.onset_strength(y=y, sr=SR, hop_length=256)
     peaks = librosa.util.peak_pick(env, pre_max=3, post_max=3, pre_avg=5, post_avg=5, delta=0.35, wait=4)
     dur_speech = speech.sum() * 512 / SR
+    # yankı/kuyruk: kelime bitişlerinden 60-120 ms sonra kalan enerji (yüksek = yankılı/çamurlu)
+    h = 80 * SR // 16000
+    e = np.array([np.sqrt(np.mean(y[i:i + h] ** 2)) for i in range(0, len(y) - h, h)])
+    d2 = 20 * np.log10(e + 1e-7)
+    tails = [np.mean(d2[i + 8:i + 20]) - d2[i - 5] for i in range(10, len(d2) - 30) if d2[i - 5] > -25 and d2[i + 5] < d2[i - 5] - 20]
     return dict(
+        yanki_db=float(np.median(tails)) if tails else 0.0,
         perde_hz=float(np.median(f0)),
         perde_oynaklik=float(np.percentile(semis, 90) - np.percentile(semis, 10)),
         hiz=float(len(peaks) / dur_speech),
@@ -39,8 +46,8 @@ def profile(f):
 
 
 # izin verilen sapma (referansa göre)
-TOL = dict(perde_hz=("%", 6), perde_oynaklik=("%", 20), hiz=("%", 10), tini_hz=("%", 10), dinamik_db=("abs", 3.0), duraklama=("abs", 0.08))
-NAMES = dict(perde_hz="Perde", perde_oynaklik="Tonlama genişliği", hiz="Konuşma hızı", tini_hz="Tını (parlaklık)", dinamik_db="Ses dinamiği", duraklama="Duraklama oranı")
+TOL = dict(yanki_db=("abs", 3.0), perde_hz=("%", 6), perde_oynaklik=("%", 20), hiz=("%", 10), tini_hz=("%", 10), dinamik_db=("abs", 3.0), duraklama=("abs", 0.08))
+NAMES = dict(yanki_db="Yankı (kuyruk)", perde_hz="Perde", perde_oynaklik="Tonlama genişliği", hiz="Konuşma hızı", tini_hz="Tını (parlaklık)", dinamik_db="Ses dinamiği", duraklama="Duraklama oranı")
 
 
 def compare(ref, cand):
