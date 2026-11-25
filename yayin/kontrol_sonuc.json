@@ -1,0 +1,51 @@
+{
+ "zaman": "2026-11-25T18:59:23.850631+00:00",
+ "secretler": {
+  "META_TOKEN": true,
+  "IG_USER_ID": true,
+  "FB_PAGE_ID": true
+ },
+ "jeton_kimin": {
+  "ok": false,
+  "hata": {
+   "message": "Invalid OAuth access token - Cannot parse access token",
+   "type": "OAuthException",
+   "code": 190,
+   "error_subcode": null
+  }
+ },
+ "sayfa": {
+  "ok": false,
+  "hata": {
+   "message": "Invalid OAuth access token - Cannot parse access token",
+   "type": "OAuthException",
+   "code": 190,
+   "error_subcode": null
+  }
+ },
+ "instagram": {
+  "ok": false,
+  "hata": {
+   "message": "Invalid OAuth access token - Cannot parse access token",
+   "type": "OAuthException",
+   "code": 190,
+   "error_subcode": null
+  }
+ },
+ "ig_kota": {
+  "ok": false,
+  "hata": {
+   "message": "Invalid OAuth access token - Cannot parse access token",
+   "type": "OAuthException",
+   "code": 190,
+   "error_subcode": null
+  }
+ },
+ "ozet": {
+  "jeton_sayfa_jetonu_mu": false,
+  "sayfa_okundu": false,
+  "instagram_okundu": false,
+  "ig_id_sayfaya_bagli_olanla_ayni": null,
+  "paylasim_kotasi_okundu": false
+ }
+}
