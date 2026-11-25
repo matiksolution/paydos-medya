@@ -51,7 +51,8 @@ def ig_bekle(cid):
 def ig_reel(p):
     c = req("POST", f"{API}/{IG}/media", {
         "media_type": "REELS", "video_url": RAW + p["medya"], "caption": p.get("metin", ""),
-        "share_to_feed": "true", "thumb_offset": str(p.get("kapak_ms", 0)), "access_token": TOKEN})
+        "share_to_feed": "true", "thumb_offset": str(p.get("kapak_ms", 0)),
+        "is_ai_generated": "true" if p.get("ai_etiketi", True) else "false", "access_token": TOKEN})
     ig_bekle(c["id"])
     return req("POST", f"{API}/{IG}/media_publish", {"creation_id": c["id"], "access_token": TOKEN})
 
@@ -59,7 +60,8 @@ def ig_reel(p):
 def ig_story(p):
     url = RAW + p["medya"]
     key = "video_url" if url.lower().endswith(".mp4") else "image_url"
-    c = req("POST", f"{API}/{IG}/media", {"media_type": "STORIES", key: url, "access_token": TOKEN})
+    c = req("POST", f"{API}/{IG}/media", {"media_type": "STORIES", key: url, "access_token": TOKEN,
+                                           "is_ai_generated": "true" if p.get("ai_etiketi", False) else "false"})
     ig_bekle(c["id"])
     return req("POST", f"{API}/{IG}/media_publish", {"creation_id": c["id"], "access_token": TOKEN})
 
