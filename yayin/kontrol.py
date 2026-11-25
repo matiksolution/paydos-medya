@@ -58,3 +58,18 @@ if T:
 json.dump(sonuc, open(os.path.join(os.path.dirname(__file__), "kontrol_sonuc.json"), "w", encoding="utf-8"),
           ensure_ascii=False, indent=1)
 print(json.dumps(sonuc.get("ozet", sonuc["secretler"]), ensure_ascii=False))
+
+# Son paylaşımların durumu (kayit.json'dan)
+try:
+    k = json.load(open(os.path.join(os.path.dirname(__file__), "kayit.json"), encoding="utf-8"))
+    son = {}
+    for ad, v in k.items():
+        r = v.get("sonuc") or {}
+        if ad.endswith(":instagram") and r.get("id"):
+            son[ad] = get(f'{r["id"]}?fields=permalink,media_product_type,is_ai_generated,timestamp')
+    son["facebook_reels"] = get(f"{PAGE}/video_reels?fields=id,status,permalink_url,created_time&limit=2")
+    sonuc["son_paylasimlar"] = son
+    json.dump(sonuc, open(os.path.join(os.path.dirname(__file__), "kontrol_sonuc.json"), "w", encoding="utf-8"),
+              ensure_ascii=False, indent=1)
+except FileNotFoundError:
+    pass
