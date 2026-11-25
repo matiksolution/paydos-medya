@@ -1,9 +1,24 @@
 {
- "zaman": "2026-11-25T18:59:23.850631+00:00",
+ "zaman": "2026-11-25T19:00:01.578807+00:00",
  "secretler": {
   "META_TOKEN": true,
   "IG_USER_ID": true,
   "FB_PAGE_ID": true
+ },
+ "jeton_bicimi": {
+  "uzunluk": 209,
+  "EAA_ile_basliyor": false,
+  "tirnak_var": false,
+  "bosluk_var": false,
+  "iki_nokta_var": false,
+  "virgul_var": false,
+  "harf_rakam_disi": 2
+ },
+ "id_bicimi": {
+  "IG_sadece_rakam": false,
+  "IG_uzunluk": 28,
+  "PAGE_sadece_rakam": false,
+  "PAGE_uzunluk": 27
  },
  "jeton_kimin": {
   "ok": false,
