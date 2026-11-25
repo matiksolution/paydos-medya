@@ -8,11 +8,19 @@ Gerekli GitHub Secrets (Ayarlar > Secrets and variables > Actions):
 """
 import json, os, sys, time, datetime as dt, urllib.request, urllib.parse
 
+def _temiz(ad):
+    """Secret'a yanlışlıkla 'AD=deger' yazılmışsa baştaki 'AD=' kısmını ve tırnak/boşlukları at."""
+    v = os.environ.get(ad, "").strip().strip('"').strip("'")
+    if v.upper().startswith(ad + "="):
+        v = v[len(ad) + 1:].strip().strip('"').strip("'")
+    return v
+
+
 API = "https://graph.facebook.com/v25.0"
 RAW = "https://raw.githubusercontent.com/matiksolution/paydos-medya/main/"
-TOKEN = os.environ.get("META_TOKEN", "")
-IG = os.environ.get("IG_USER_ID", "")
-PAGE = os.environ.get("FB_PAGE_ID", "")
+TOKEN = _temiz("META_TOKEN")
+IG = _temiz("IG_USER_ID")
+PAGE = _temiz("FB_PAGE_ID")
 HERE = os.path.dirname(os.path.abspath(__file__))
 TAKVIM = os.path.join(HERE, "takvim.json")
 KAYIT = os.path.join(HERE, "kayit.json")

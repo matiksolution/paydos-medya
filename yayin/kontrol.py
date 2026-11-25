@@ -1,8 +1,16 @@
 """Paylaşım yapmadan bağlantı kontrolü. Jetonu asla yazdırmaz; sonucu yayin/kontrol_sonuc.json'a yazar."""
 import json, os, datetime as dt, urllib.request, urllib.error
 
+def _temiz(ad):
+    """Secret'a yanlışlıkla 'AD=deger' yazılmışsa baştaki 'AD=' kısmını ve tırnak/boşlukları at."""
+    v = os.environ.get(ad, "").strip().strip('"').strip("'")
+    if v.upper().startswith(ad + "="):
+        v = v[len(ad) + 1:].strip().strip('"').strip("'")
+    return v
+
+
 API = "https://graph.facebook.com/v25.0"
-T, IG, PAGE = (os.environ.get(k, "").strip() for k in ("META_TOKEN", "IG_USER_ID", "FB_PAGE_ID"))
+T, IG, PAGE = (_temiz(k) for k in ("META_TOKEN", "IG_USER_ID", "FB_PAGE_ID"))
 
 
 def get(path):
@@ -25,7 +33,7 @@ sonuc = {"zaman": dt.datetime.now(dt.timezone.utc).isoformat(),
                           "tirnak_var": any(c in T for c in "\"'"), "bosluk_var": any(c.isspace() for c in T),
                           "iki_nokta_var": ":" in T, "virgul_var": "," in T,
                           "harf_rakam_disi": sorted({c for c in T if not c.isalnum()})[:5] and len({c for c in T if not c.isalnum()})},
-         "jeton_ilk2": T[:2], "jeton_ozel_karakterler": sorted({c for c in T if not c.isalnum()}),
+         "jeton_ozel_karakterler": sorted({c for c in T if not c.isalnum()}),
          "id_ozel_karakterler": {"IG": sorted({c for c in IG if not c.isdigit()}), "PAGE": sorted({c for c in PAGE if not c.isdigit()})},
          "id_rakam_sayisi": {"IG": sum(c.isdigit() for c in IG), "PAGE": sum(c.isdigit() for c in PAGE)},
          "id_bicimi": {"IG_sadece_rakam": IG.isdigit(), "IG_uzunluk": len(IG),
