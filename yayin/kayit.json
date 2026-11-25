@@ -1,0 +1,18 @@
+{
+ "v2-buyuk-resim:instagram": {
+  "durum": "yayinda",
+  "sonuc": {
+   "id": "17931760563185796"
+  },
+  "zaman": "2026-11-25T19:02:31.251966+00:00"
+ },
+ "v2-buyuk-resim:facebook": {
+  "durum": "yayinda",
+  "sonuc": {
+   "success": true,
+   "message": "Video is Processing. To check the status of the video, please follow the instructions listed at https://developers.facebook.com/docs/video-api/guides/reels-publishing#get-the-upload-status.",
+   "post_id": "122095256409568018"
+  },
+  "zaman": "2026-11-25T19:02:31.251966+00:00"
+ }
+}
