@@ -19,7 +19,14 @@ def get(path):
 
 
 sonuc = {"zaman": dt.datetime.now(dt.timezone.utc).isoformat(),
-         "secretler": {"META_TOKEN": bool(T), "IG_USER_ID": bool(IG), "FB_PAGE_ID": bool(PAGE)}}
+         "secretler": {"META_TOKEN": bool(T), "IG_USER_ID": bool(IG), "FB_PAGE_ID": bool(PAGE)},
+         # jetonun kendisi yazılmaz, sadece biçimi
+         "jeton_bicimi": {"uzunluk": len(T), "EAA_ile_basliyor": T.startswith("EAA"),
+                          "tirnak_var": any(c in T for c in "\"'"), "bosluk_var": any(c.isspace() for c in T),
+                          "iki_nokta_var": ":" in T, "virgul_var": "," in T,
+                          "harf_rakam_disi": sorted({c for c in T if not c.isalnum()})[:5] and len({c for c in T if not c.isalnum()})},
+         "id_bicimi": {"IG_sadece_rakam": IG.isdigit(), "IG_uzunluk": len(IG),
+                       "PAGE_sadece_rakam": PAGE.isdigit(), "PAGE_uzunluk": len(PAGE)}}
 if T:
     sonuc["jeton_kimin"] = get("me?fields=id,name")
     if PAGE:
