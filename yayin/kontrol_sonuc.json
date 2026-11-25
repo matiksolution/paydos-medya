@@ -1,100 +1,79 @@
 {
- "zaman": "2026-11-25T19:00:38.873988+00:00",
+ "zaman": "2026-11-25T19:01:10.792551+00:00",
  "secretler": {
   "META_TOKEN": true,
   "IG_USER_ID": true,
   "FB_PAGE_ID": true
  },
  "jeton_bicimi": {
-  "uzunluk": 209,
-  "EAA_ile_basliyor": false,
+  "uzunluk": 198,
+  "EAA_ile_basliyor": true,
   "tirnak_var": false,
   "bosluk_var": false,
   "iki_nokta_var": false,
   "virgul_var": false,
-  "harf_rakam_disi": 2
+  "harf_rakam_disi": []
  },
- "jeton_ilk2": "ME",
- "jeton_ozel_karakterler": [
-  "=",
-  "_"
- ],
+ "jeton_ozel_karakterler": [],
  "id_ozel_karakterler": {
-  "IG": [
-   "=",
-   "D",
-   "E",
-   "G",
-   "I",
-   "R",
-   "S",
-   "U",
-   "_"
-  ],
-  "PAGE": [
-   "=",
-   "A",
-   "B",
-   "D",
-   "E",
-   "F",
-   "G",
-   "I",
-   "P",
-   "_"
-  ]
+  "IG": [],
+  "PAGE": []
  },
  "id_rakam_sayisi": {
   "IG": 17,
   "PAGE": 16
  },
  "id_bicimi": {
-  "IG_sadece_rakam": false,
-  "IG_uzunluk": 28,
-  "PAGE_sadece_rakam": false,
-  "PAGE_uzunluk": 27
+  "IG_sadece_rakam": true,
+  "IG_uzunluk": 17,
+  "PAGE_sadece_rakam": true,
+  "PAGE_uzunluk": 16
  },
  "jeton_kimin": {
-  "ok": false,
-  "hata": {
-   "message": "Invalid OAuth access token - Cannot parse access token",
-   "type": "OAuthException",
-   "code": 190,
-   "error_subcode": null
+  "ok": true,
+  "veri": {
+   "id": "1521619734359554",
+   "name": "Paydos Muhabbeti"
   }
  },
  "sayfa": {
-  "ok": false,
-  "hata": {
-   "message": "Invalid OAuth access token - Cannot parse access token",
-   "type": "OAuthException",
-   "code": 190,
-   "error_subcode": null
+  "ok": true,
+  "veri": {
+   "id": "1521619734359554",
+   "name": "Paydos Muhabbeti",
+   "instagram_business_account": {
+    "id": "17841471155538663"
+   }
   }
  },
  "instagram": {
-  "ok": false,
-  "hata": {
-   "message": "Invalid OAuth access token - Cannot parse access token",
-   "type": "OAuthException",
-   "code": 190,
-   "error_subcode": null
+  "ok": true,
+  "veri": {
+   "id": "17841471155538663",
+   "followers_count": 36,
+   "media_count": 1,
+   "username": "paydosmuhabbeti"
   }
  },
  "ig_kota": {
-  "ok": false,
-  "hata": {
-   "message": "Invalid OAuth access token - Cannot parse access token",
-   "type": "OAuthException",
-   "code": 190,
-   "error_subcode": null
+  "ok": true,
+  "veri": {
+   "data": [
+    {
+     "quota_usage": 34,
+     "config": {
+      "quota_total": 100,
+      "quota_duration": 86400
+     }
+    }
+   ]
   }
  },
  "ozet": {
-  "jeton_sayfa_jetonu_mu": false,
-  "sayfa_okundu": false,
-  "instagram_okundu": false,
-  "ig_id_sayfaya_bagli_olanla_ayni": null,
-  "paylasim_kotasi_okundu": false
+  "jeton_sayfa_jetonu_mu": true,
+  "sayfa_okundu": true,
+  "instagram_okundu": true,
+  "ig_id_sayfaya_bagli_olanla_ayni": true,
+  "paylasim_kotasi_okundu": true
  }
 }
