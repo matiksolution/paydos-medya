@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch: {}
+  push:
+    paths: ["yayin/takvim.json"]
 permissions:
   contents: write
 concurrency: yayin
