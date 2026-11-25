@@ -25,6 +25,9 @@ sonuc = {"zaman": dt.datetime.now(dt.timezone.utc).isoformat(),
                           "tirnak_var": any(c in T for c in "\"'"), "bosluk_var": any(c.isspace() for c in T),
                           "iki_nokta_var": ":" in T, "virgul_var": "," in T,
                           "harf_rakam_disi": sorted({c for c in T if not c.isalnum()})[:5] and len({c for c in T if not c.isalnum()})},
+         "jeton_ilk2": T[:2], "jeton_ozel_karakterler": sorted({c for c in T if not c.isalnum()}),
+         "id_ozel_karakterler": {"IG": sorted({c for c in IG if not c.isdigit()}), "PAGE": sorted({c for c in PAGE if not c.isdigit()})},
+         "id_rakam_sayisi": {"IG": sum(c.isdigit() for c in IG), "PAGE": sum(c.isdigit() for c in PAGE)},
          "id_bicimi": {"IG_sadece_rakam": IG.isdigit(), "IG_uzunluk": len(IG),
                        "PAGE_sadece_rakam": PAGE.isdigit(), "PAGE_uzunluk": len(PAGE)}}
 if T:
