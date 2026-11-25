@@ -75,7 +75,56 @@ def fb_reel(p):
         "description": p.get("metin", ""), "access_token": TOKEN})
 
 
-ISLEM = {("instagram", "reel"): ig_reel, ("instagram", "story"): ig_story, ("facebook", "reel"): fb_reel}
+def _liste(p):
+    m = p["medya"]
+    return m if isinstance(m, list) else [m]
+
+
+def ig_post(p):
+    """Tek görsel ya da kaydırmalı (en fazla 10 JPEG)."""
+    ai = "true" if p.get("ai_etiketi", False) else "false"
+    ms = _liste(p)[:10]
+    if len(ms) == 1:
+        c = req("POST", f"{API}/{IG}/media", {"image_url": RAW + ms[0], "caption": p.get("metin", ""),
+                                              "is_ai_generated": ai, "access_token": TOKEN})
+    else:
+        kids = []
+        for m in ms:
+            k = req("POST", f"{API}/{IG}/media", {"image_url": RAW + m, "is_carousel_item": "true", "access_token": TOKEN})
+            kids.append(k["id"])
+        for k in kids:
+            ig_bekle(k)
+        c = req("POST", f"{API}/{IG}/media", {"media_type": "CAROUSEL", "children": ",".join(kids),
+                                              "caption": p.get("metin", ""), "is_ai_generated": ai, "access_token": TOKEN})
+    ig_bekle(c["id"])
+    return req("POST", f"{API}/{IG}/media_publish", {"creation_id": c["id"], "access_token": TOKEN})
+
+
+def fb_post(p):
+    ms = _liste(p)[:10]
+    if len(ms) == 1:
+        return req("POST", f"{API}/{PAGE}/photos", {"url": RAW + ms[0], "caption": p.get("metin", ""), "access_token": TOKEN})
+    ids = [req("POST", f"{API}/{PAGE}/photos", {"url": RAW + m, "published": "false", "access_token": TOKEN})["id"] for m in ms]
+    data = {"message": p.get("metin", ""), "access_token": TOKEN}
+    for i, x in enumerate(ids):
+        data[f"attached_media[{i}]"] = json.dumps({"media_fbid": x})
+    return req("POST", f"{API}/{PAGE}/feed", data)
+
+
+def fb_story(p):
+    url = RAW + _liste(p)[0]
+    if url.lower().endswith(".mp4"):
+        s = req("POST", f"{API}/{PAGE}/video_stories", {"upload_phase": "start", "access_token": TOKEN})
+        req("POST", s["upload_url"], b"", {"Authorization": f"OAuth {TOKEN}", "file_url": url})
+        return req("POST", f"{API}/{PAGE}/video_stories", {"upload_phase": "finish", "video_id": s["video_id"], "access_token": TOKEN})
+    ph = req("POST", f"{API}/{PAGE}/photos", {"url": url, "published": "false", "access_token": TOKEN})
+    return req("POST", f"{API}/{PAGE}/photo_stories", {"photo_id": ph["id"], "access_token": TOKEN})
+
+
+ISLEM = {("instagram", "reel"): ig_reel, ("instagram", "story"): ig_story, ("facebook", "reel"): fb_reel,
+         ("instagram", "post"): ig_post, ("facebook", "post"): fb_post, ("facebook", "story"): fb_story}
+ERKEN = dt.timedelta(minutes=8)   # GitHub zamanlayıcısı gecikebildiği için en fazla 8 dk erken çıkabilir
+EN_FAZLA_DENEME = 3
 
 
 def main():
@@ -87,11 +136,12 @@ def main():
     degisti = False
     for p in takvim:
         zaman = dt.datetime.fromisoformat(p["zaman"])
-        if zaman > simdi:
+        if zaman > simdi + ERKEN or p.get("durum") == "taslak":
             continue
         for ag in p["aglar"]:
             k = f'{p["id"]}:{ag}'
-            if kayit.get(k, {}).get("durum") == "yayinda":
+            onceki = kayit.get(k, {})
+            if onceki.get("durum") == "yayinda" or onceki.get("deneme", 0) >= EN_FAZLA_DENEME:
                 continue
             if simdi - zaman > GEC_KALMA_SINIRI:
                 if k not in kayit:
@@ -102,7 +152,8 @@ def main():
                 kayit[k] = {"durum": "yayinda", "sonuc": sonuc, "zaman": simdi.isoformat()}
                 print("YAYINDA", k, sonuc)
             except Exception as e:  # noqa
-                kayit[k] = {"durum": "hata", "hata": str(e)[:500], "zaman": simdi.isoformat()}
+                kayit[k] = {"durum": "hata", "hata": str(e)[:500], "zaman": simdi.isoformat(),
+                            "deneme": onceki.get("deneme", 0) + 1}
                 print("HATA", k, e)
             degisti = True
     if degisti:
