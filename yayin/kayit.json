@@ -14,5 +14,20 @@
    "post_id": "122095256409568018"
   },
   "zaman": "2026-11-25T19:02:31.251966+00:00"
+ },
+ "s1-yikim-sabah:instagram": {
+  "durum": "yayinda",
+  "sonuc": {
+   "id": "18167204398507702"
+  },
+  "zaman": "2026-11-26T07:59:12.918540+00:00"
+ },
+ "s1-yikim-sabah:facebook": {
+  "durum": "yayinda",
+  "sonuc": {
+   "success": true,
+   "post_id": "4087927671502063"
+  },
+  "zaman": "2026-11-26T07:59:12.918540+00:00"
  }
 }
