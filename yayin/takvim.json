@@ -125,5 +125,309 @@
   "medya": "videos/story_tekno1_aksam.mp4",
   "ai_etiketi": true,
   "durum": "taslak"
+ },
+ {
+  "id": "s2-ucak-sabah",
+  "zaman": "2026-11-29T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada2_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "s2-ucak",
+  "zaman": "2026-11-29T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_sahada2_ucak_v1.mp4",
+  "kapak_ms": 5330,
+  "ai_etiketi": true,
+  "metin": "Kalkışta öyle bir an var ki, bir motor dursa bile pilot frene basmaz. ✈️\n\nHer kalkıştan önce pilotlar hesap yapar: uçağın ağırlığı, pistin uzunluğu, rüzgar, hava sıcaklığı. Bu hesaptan üç hız çıkar:\n\n1️⃣ Karar hızı: Bu hıza gelmeden ciddi bir arıza olursa kalkış kesilir, uçak pistte durur. Bu hızı geçtikten sonra durmaya pist yetmeyebilir; o yüzden bir motor dursa bile uçak tek motorla havalanır.\n2️⃣ Burun kaldırma hızı: Pilot kumandayı yavaşça çeker, burun kalkar, tekerler yerden kesilir. Erken çekerse kuyruk piste sürtebilir.\n3️⃣ Güvenli tırmanma hızı: Bir motor dursa bile uçağın güvenle tırmanabileceği hız.\n\nOrta boy bir yolcu uçağı genelde saatte 250 ile 300 km arasında havalanır.\n\nPilotlara selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: Airbus Safety First; SKYbrary (Rejected Takeoff) ve FAA belgesi; Aerospaceweb.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #pilot #havacılık #uçak #kalkış #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "s2-ucak-aksam",
+  "zaman": "2026-11-29T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada2_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "h1-ucret-sabah",
+  "zaman": "2026-11-30T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_haklarin1_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "h1-ucret",
+  "zaman": "2026-11-30T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_haklarin1_ucret_v1.mp4",
+  "kapak_ms": 21560,
+  "ai_etiketi": true,
+  "metin": "Maaşın yattı. Peki ne kadar olması gerektiğini biliyor musun? 👇\n\n1️⃣ Brüt ve net: Brüt kesintilerden önceki ücret, net eline geçen. 2026 asgari ücret: brüt 33.030 TL, net 28.075,50 TL.\n2️⃣ Ücret en geç ayda bir ödenir. Gününde ödenmezse mevduata uygulanan en yüksek faiz işler.\n3️⃣ Her ödemede işveren ücret hesap pusulası vermek zorunda (çoğumuz bordro deriz). Ödenen ay, fazla mesai, tatil ödemeleri ve her kesinti ayrı ayrı yazar.\n4️⃣ İşveren ceza olarak ücretinden ayda 2 günlükten fazlasını kesemez; nedenini de hemen bildirmek zorunda.\n5️⃣ Brüt ücretin her ay Sosyal Güvenlik Kurumu'na bildirilir; emeklilikte hesaba bu bildirimler girer. e-Devlet'te hizmet dökümüne bak: bildirilen ücret, gerçek ücretinle aynı mı?\n\nSon olarak: Ücret alacağında zamanaşımı 5 yıl.\n\nBir sonraki bölümde: fazla mesai.\nRakam bizden, yorum senden.\n\nKaynak: Çalışma ve Sosyal Güvenlik Bakanlığı, 2026 asgari ücret duyurusu (23 Aralık 2025) ve \"40 Soruda İş Kanunu'nda Ücret\"; Sosyal Güvenlik Kurumu.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#hakların #ücret #asgariücret #bordro #çalışanhakları #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "h1-ucret-aksam",
+  "zaman": "2026-11-30T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_haklarin1_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "s3-mikser-sabah",
+  "zaman": "2026-12-01T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada3_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "s3-mikser",
+  "zaman": "2026-12-01T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_sahada3_mikser_v1.mp4",
+  "kapak_ms": 5070,
+  "ai_etiketi": true,
+  "metin": "Beton mikserinin tamburu yol boyunca neden hiç durmadan döner? 🚛\n\n📌 İçinde beton var: çimento, kum, çakıl, su ve katkı. Hepsi beton santralinde tartılıp tambura doldurulur.\n📌 Tamburun içinde iki sarmal kanat var. Tambur bir yöne döndükçe kanatlar betonu karıştırır ve içeri doğru iter.\n📌 Yolda yavaş döner. Durursa ağır taşlar dibe çöker, beton ayrışır.\n📌 Şantiyede tambur ters döner; aynı kanatlar betonu dışarı iter, oluktan akar.\n📌 Beton koyulaştıysa şantiyede su eklenmez. Standart, beton döküm yerine geldikten sonra su oranını artıracak su ilavesine izin vermez. Kıvam gerekirse katkıyla ayarlanır ve irsaliyeye yazılır.\n\nBeton bekleyen bir malzeme değil: Ne kadar erken dökülürse o kadar iyi.\n\nMikser şoförlerine selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: ABD patent belgeleri 7722243 ve 7510319; Pavement Interactive; Türkiye Hazır Beton Birliği Akademi, Teknik Bülten 21 (TS EN 206 md. 7.5, TS 13515).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #betonmikseri #hazırbeton #inşaat #şantiye #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "s3-mikser-aksam",
+  "zaman": "2026-12-01T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada3_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "b2-is-kazasi-sabah",
+  "zaman": "2026-12-02T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_buyuk2_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "b2-is-kazasi",
+  "zaman": "2026-12-02T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_buyuk2_is_kazasi_v1.mp4",
+  "kapak_ms": 5090,
+  "ai_etiketi": true,
+  "metin": "Türkiye'de geçen yıl her gün ortalama 2 bin iş kazası bildirildi.\n\n📌 2025'te sigortalı çalışanlarda (4/a) 766.039 iş kazası, yani günde ortalama 2.099.\n📌 Bu kazalarda 1.931 kişi hayatını kaybetti.\n📌 Ölümlerin en çok olduğu sektör inşaat: bina inşaatında 360, yol, köprü, baraj gibi işlerde 145 kişi.\n📌 Nedeni bilinen ölümlerde ilk sırada yüksekten düşme var: 311 kişi.\n\n\"Bir şey olmaz abi\" diye başlayan cümleler, bu rakamların içinde bitiyor.\nKemerini tak, baretini giy, korkuluğu sökme, kurala uy. Akşam evine dön.\n\nRakam bizden, yorum senden.\n\nKaynak: Sosyal Güvenlik Kurumu 2025 yılı iş kazası istatistikleri (4/a); Habertürk, 14 Temmuz 2026; Evrensel, 26 Temmuz 2026.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#işgüvenliği #işkazası #inşaat #baret #emniyetkemeri #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "b2-is-kazasi-aksam",
+  "zaman": "2026-12-02T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_buyuk2_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "m1-garson-sabah",
+  "zaman": "2026-12-03T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_meslek1_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "m1-garson",
+  "zaman": "2026-12-03T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_meslek1_garson_v1.mp4",
+  "kapak_ms": 4310,
+  "ai_etiketi": true,
+  "metin": "Türkiye'de bu yıl en çok eleman aranan mesleklerden biri: garson. 🍽️\n\n📌 İş Kurumu'na göre 2026'nın ilk 8 ayında garson için 38.131 açık iş bildirildi. Listenin başında hep hizmet meslekleri var: turizm ve otelcilik elemanı, özel güvenlik, reyon görevlisi, market elemanı.\n📌 Garsonluğun devletin tanıdığı bir belgesi var: Servis Görevlisi mesleki yeterlilik belgesi, Seviye 2, 3 ve 4.\n📌 Belgede ölçülenler: servis öncesi hazırlık, sıcak ve soğuk içecek servisi, yiyecek servisi, vardiya sonu işlemleri ve iş güvenliği.\n📌 Bir üst basamak: Servis Yöneticisi, Seviye 5.\n\nYani tepside taşınan şey sadece tabak değil; bir meslek.\n\nGarsonluk yaptın mı, yapıyor musun? Yorumlara yaz.\n\nKaynak: İş Kurumu, Ağustos 2026 aylık istatistik bülteni; Mesleki Yeterlilik Kurumu, Servis Görevlisi (Seviye 2-4) ve Servis Yöneticisi (Seviye 5) ulusal yeterlilikleri.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#meslekler #garson #servis #hizmetsektörü #meslekiyeterlilik #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "m1-garson-aksam",
+  "zaman": "2026-12-03T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_meslek1_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "s4-elektrik-sabah",
+  "zaman": "2026-12-04T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada4_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "s4-elektrik",
+  "zaman": "2026-12-04T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_sahada4_elektrik_v1.mp4",
+  "kapak_ms": 5040,
+  "ai_etiketi": true,
+  "metin": "Elektriği kesmeden hatta çalışılır mı? Çalışılır. Sahadaki adı: canlı bakım. ⚡\n\nHat kesilince o hattan beslenen herkes elektriksiz kalır. Bakımda elektrik akmaya devam etsin diye bu yöntem var. Üç yolun da amacı aynı: Akımın ustanın vücudundan geçmesini önlemek.\n\n1️⃣ Yalıtkan çubuk: Usta hattan belli bir mesafede durur, işi uzun yalıtkan bir çubukla yapar.\n2️⃣ Yalıtkan eldiven: Usta yalıtkan eldiven ve kolluk giyer, yalıtılmış bir sepetten hatta uzanır.\n3️⃣ Çıplak el: Usta hatla aynı gerilime getirilir. Aradaki fark sıfır olunca akım vücudundan geçmez, telde duran kuş gibi. Ama artık direğe ve yere yaklaşmamak zorunda.\n\n📌 Türkiye'de iletim hatlarında ilk canlı bakım 2014'te Ankara'da yapıldı; ekip 380 kV'luk hatta ilk kez iletkene dokundu.\n\nBu iş, eğitimli ve yetkili ekiplerin işi. Evde bile sigortayı kapatmadan elektriğe dokunma.\n\nHat ustalarına selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: ABD İş Sağlığı ve Güvenliği İdaresi (OSHA) 1910.269 rehberi; Elektrik Mühendisleri Odası yayınları; TEİAŞ açıklaması (Posta, 30 Ağustos 2014).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #elektrik #canlıbakım #hatustası #işgüvenliği #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "s4-elektrik-aksam",
+  "zaman": "2026-12-04T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada4_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "t2-dron-sabah",
+  "zaman": "2026-12-05T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_tekno2_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "t2-dron",
+  "zaman": "2026-12-05T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_tekno2_dron_v1.mp4",
+  "kapak_ms": 3410,
+  "ai_etiketi": true,
+  "metin": "Şantiyede bir toprak yığını var. Kaç kamyon eder? 🚁\n\n📌 Klasik yöntemde ölçüm ekibi aletini kurar, yığının üstünde nokta nokta ölçer.\n📌 Dron sahanın üstünde şerit şerit uçar, yüzlerce fotoğraf çeker. Her fotoğraf bir öncekinin yaklaşık dörtte üçünü yeniden görür (%75 örtüşme).\n📌 Bilgisayar bu fotoğraflardan sahanın 3 boyutlu modelini çıkarır: fotogrametri.\n📌 Yere işaretler konur, yerini harita ekibi hassas cihazla ölçer; model bu noktalara oturtulur, hata santimetrelere iner.\n📌 Bir araştırmada 2.750 m³'lük çakıl yığınını dron yaklaşık %2,3, klasik yer ölçümü yaklaşık %2,9 sapmayla ölçtü.\n📌 30 Temmuz 2026'da yürürlüğe giren yeni talimatla dron pilotluğu lisansa bağlandı; görüş hattında ticari uçuş için P1 lisansı gerekiyor.\n\nYani dron ölçüm ekibini kaldırmıyor; ekibin gözünü havaya taşıyor.\n\nSen şantiyede dron gördün mü? Yorumlara yaz.\n\nKaynak: Kuzey Dakota Ulaştırma Bakanlığı İHA ölçüm rehberi; Ajayi ve ark., Quaestiones Geographicae (2021); Sivil Havacılık Genel Müdürlüğü, İnsansız Hava Aracı Sistemleri Talimatı (SHT-İHA).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#teknoloji #dron #harita #şantiye #ölçüm #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "t2-dron-aksam",
+  "zaman": "2026-12-05T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_tekno2_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "s5-tunel-sabah",
+  "zaman": "2026-12-06T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada5_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "s5-tunel",
+  "zaman": "2026-12-06T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_sahada5_tunel_v1.mp4",
+  "kapak_ms": 8300,
+  "ai_etiketi": true,
+  "metin": "İstanbul Boğazı'nın altında, deniz yüzeyinden 106 metre aşağıda bir tünel var. Onu bu makine açtı. 🚇\n\n📌 Önünde dev bir kesici kafa döner; üzerindeki diskler kayayı ve toprağı kırar.\n📌 Kırılan toprak bir helezonla, sonra bantla geriye taşınır, tünelden dışarı çıkar.\n📌 Makine ilerledikçe arkasında tünelin duvarı örülür: Fabrikada dökülmüş beton parçaları bir kol yerine koyar, parçalar birleşir, halka olur.\n📌 Püf noktası: Makine ileri gitmek için yeni koyduğu halkaya yaslanır. Hidrolik pistonlar halkayı iter, makine bir adım öne çıkar. Kaz, ör, it. Tekrar.\n📌 Avrasya Tüneli'ni açan makinenin kazı çapı 13,7 metreydi; günde 8-10 metre ilerleyerek Boğaz'ın altındaki 3.344 metreyi kazdı.\n\nTünelcilere selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: Güney Avustralya Hükümeti T2D projesi tünel makinesi bilgi notu; Türkiye Gazetesi; Habertürk; Şantiye dergisi; Posta.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #tünel #avrasyatüneli #inşaat #mühendislik #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "s5-tunel-aksam",
+  "zaman": "2026-12-06T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada5_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
  }
 ]
