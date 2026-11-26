@@ -29,5 +29,37 @@
    "post_id": "4087927671502063"
   },
   "zaman": "2026-11-26T07:59:12.918540+00:00"
+ },
+ "s1-yikim:instagram": {
+  "durum": "yayinda",
+  "sonuc": {
+   "id": "17997118065071371"
+  },
+  "zaman": "2026-11-26T16:31:42.840624+00:00"
+ },
+ "s1-yikim:facebook": {
+  "durum": "yayinda",
+  "sonuc": {
+   "success": true,
+   "message": "Video is Processing. To check the status of the video, please follow the instructions listed at https://developers.facebook.com/docs/video-api/guides/reels-publishing#get-the-upload-status.",
+   "post_id": "122095859733568018"
+  },
+  "zaman": "2026-11-26T16:31:42.840624+00:00"
+ },
+ "s1-yikim-aksam:instagram": {
+  "durum": "yayinda",
+  "sonuc": {
+   "id": "18441466189199767"
+  },
+  "zaman": "2026-11-26T16:31:42.840624+00:00"
+ },
+ "s1-yikim-aksam:facebook": {
+  "durum": "yayinda",
+  "sonuc": {
+   "success": true,
+   "message": "Video is Processing. To check the status of the video, please follow the instructions listed at https://developers.facebook.com/docs/page-stories-api.",
+   "post_id": "3101778663487227"
+  },
+  "zaman": "2026-11-26T16:31:42.840624+00:00"
  }
 }
