@@ -1,0 +1,38 @@
+name: Paydos bekci
+on:
+  workflow_dispatch: {}
+  push:
+    paths: ["yayin/bekci_iste.txt"]
+permissions:
+  contents: write
+concurrency: yayin
+jobs:
+  ilk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: git config user.name "paydos-robot" && git config user.email "robot@users.noreply.github.com"
+      - name: Ilk 5 saat 45 dk
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: python yayin/bekci.py 345
+  ikinci:
+    needs: ilk
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: git config user.name "paydos-robot" && git config user.email "robot@users.noreply.github.com"
+      - name: Sonraki 5 saat 45 dk
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: python yayin/bekci.py 345
