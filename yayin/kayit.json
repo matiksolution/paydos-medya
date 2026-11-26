@@ -44,14 +44,14 @@
  },
  "s1-yikim-aksam:instagram": {
   "durum": "hata",
-  "hata": "400: {\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\n        pages_read_user_content, pages_manage_ads, pages_show_list or\\n        pages_messaging permission(s) must be granted before impersonating a\\n        user's page.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AenstenkZYHDOR8bmaRBzi-\"}}",
-  "zaman": "2026-11-26T15:15:53.526981+00:00",
-  "deneme": 2
+  "hata": "400: {\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\n        pages_read_user_content, pages_manage_ads, pages_show_list or\\n        pages_messaging permission(s) must be granted before impersonating a\\n        user's page.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AYgQ3BRHZd-j-Wnm6mSSsGI\"}}",
+  "zaman": "2026-11-26T15:16:24.978167+00:00",
+  "deneme": 3
  },
  "s1-yikim-aksam:facebook": {
   "durum": "hata",
-  "hata": "400: {\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\n        pages_read_user_content, pages_manage_ads, pages_show_list or\\n        pages_messaging permission(s) must be granted before impersonating a\\n        user's page.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AGYPGcrUrnmYjvZE-m-iYIW\"}}",
-  "zaman": "2026-11-26T15:15:53.526981+00:00",
-  "deneme": 2
+  "hata": "400: {\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\n        pages_read_user_content, pages_manage_ads, pages_show_list or\\n        pages_messaging permission(s) must be granted before impersonating a\\n        user's page.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A3fcNinhm3vytdSX9vtrbjb\"}}",
+  "zaman": "2026-11-26T15:16:24.978167+00:00",
+  "deneme": 3
  }
 }
