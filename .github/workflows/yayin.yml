@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: git config user.name "paydos-robot" && git config user.email "robot@users.noreply.github.com"
       - name: Zamanı gelenleri paylaş
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}

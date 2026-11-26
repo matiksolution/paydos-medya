@@ -124,40 +124,83 @@ def fb_story(p):
 ISLEM = {("instagram", "reel"): ig_reel, ("instagram", "story"): ig_story, ("facebook", "reel"): fb_reel,
          ("instagram", "post"): ig_post, ("facebook", "post"): fb_post, ("facebook", "story"): fb_story}
 ERKEN = dt.timedelta(minutes=0)   # saatinde paylaşımı bekçi yapar; zamanlayıcı yalnızca yedek
-EN_FAZLA_DENEME = 3
+EN_FAZLA_DENEME = 1   # hata olursa tekrar denemez: mükerrer riskine karşı; uyarı açılır, elle bakılır
+
+
+import subprocess
+KOK_DEPO = os.path.dirname(HERE)
+
+
+def _git(*a):
+    return subprocess.run(["git", *a], cwd=KOK_DEPO, capture_output=True, text=True)
+
+
+def _tazele():
+    """Depodaki en güncel kaydı çek (başka bir robotun yaptıklarını görmek için)."""
+    _git("fetch", "-q", "origin", "main")
+    _git("reset", "-q", "--hard", "origin/main")
+    return json.load(open(KAYIT, encoding="utf-8")) if os.path.exists(KAYIT) else {}
+
+
+def _gonder(kayit, mesaj):
+    json.dump(kayit, open(KAYIT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    _git("add", "yayin/kayit.json")
+    _git("commit", "-q", "-m", mesaj)
+    return _git("push", "-q", "origin", "HEAD:main").returncode == 0
+
+
+def _sahiplen(k):
+    """KİLİT: paylaşmadan önce kaydı 'isleniyor' yapıp depoya iter. İtme başarısızsa başka bir robot
+    aynı anda çalışıyor demektir; en güncel kayda bakıp tekrar dener. Böylece aynı paylaşım iki kez çıkmaz."""
+    for _ in range(6):
+        kayit = _tazele()
+        onceki = kayit.get(k, {})
+        if onceki.get("durum") in ("yayinda", "isleniyor") or onceki.get("deneme", 0) >= EN_FAZLA_DENEME:
+            return None
+        kayit[k] = {"durum": "isleniyor", "zaman": dt.datetime.now(dt.timezone.utc).isoformat(),
+                    "deneme": onceki.get("deneme", 0)}
+        if _gonder(kayit, f"isleniyor: {k}"):
+            return onceki
+        time.sleep(3)
+    return None
+
+
+def _sonucla(k, deger):
+    for _ in range(6):
+        kayit = _tazele()
+        kayit[k] = deger
+        if _gonder(kayit, f"yayin kaydi: {k}"):
+            return
+        time.sleep(3)
 
 
 def main():
     if not (TOKEN and IG and PAGE):
         print("META_TOKEN / IG_USER_ID / FB_PAGE_ID tanımlı değil; çıkıyorum."); return 0
+    kayit = _tazele()
     takvim = json.load(open(TAKVIM, encoding="utf-8"))
-    kayit = json.load(open(KAYIT, encoding="utf-8")) if os.path.exists(KAYIT) else {}
     simdi = dt.datetime.now(dt.timezone.utc)
-    degisti = False
     for p in takvim:
         zaman = dt.datetime.fromisoformat(p["zaman"])
         if zaman > simdi + ERKEN or p.get("durum") == "taslak":
             continue
         for ag in p["aglar"]:
             k = f'{p["id"]}:{ag}'
-            onceki = kayit.get(k, {})
-            if onceki.get("durum") == "yayinda" or onceki.get("deneme", 0) >= EN_FAZLA_DENEME:
-                continue
             if simdi - zaman > GEC_KALMA_SINIRI:
                 if k not in kayit:
-                    kayit[k] = {"durum": "atlandi", "neden": "zamanı 6 saatten fazla geçmişti"}; degisti = True
+                    _sonucla(k, {"durum": "atlandi", "neden": "zamanı 6 saatten fazla geçmişti"})
+                continue
+            onceki = _sahiplen(k)
+            if onceki is None:
                 continue
             try:
                 sonuc = ISLEM[(ag, p["tur"])](p)
-                kayit[k] = {"durum": "yayinda", "sonuc": sonuc, "zaman": simdi.isoformat()}
+                _sonucla(k, {"durum": "yayinda", "sonuc": sonuc, "zaman": dt.datetime.now(dt.timezone.utc).isoformat()})
                 print("YAYINDA", k, sonuc)
             except Exception as e:  # noqa
-                kayit[k] = {"durum": "hata", "hata": str(e)[:500], "zaman": simdi.isoformat(),
-                            "deneme": onceki.get("deneme", 0) + 1}
+                _sonucla(k, {"durum": "hata", "hata": str(e)[:500], "zaman": dt.datetime.now(dt.timezone.utc).isoformat(),
+                             "deneme": onceki.get("deneme", 0) + 1})
                 print("HATA", k, e)
-            degisti = True
-    if degisti:
-        json.dump(kayit, open(KAYIT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return 0
 
 
