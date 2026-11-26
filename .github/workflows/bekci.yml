@@ -10,6 +10,7 @@ on:
 permissions:
   contents: write
   actions: write
+  issues: write
 concurrency: bekci
 jobs:
   bekle:
@@ -25,6 +26,7 @@ jobs:
           META_TOKEN: ${{ secrets.META_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          GH_TOKEN: ${{ github.token }}
         run: python yayin/bekci.py 345
       - name: Zinciri devam ettir
         if: always()

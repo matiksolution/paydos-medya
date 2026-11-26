@@ -34,6 +34,25 @@ def bekleyenler(bitis):
     return sorted(set(out))
 
 
+def uyar():
+    """Yeni bir paylaşım hatası varsa GitHub'da konu (issue) açar; GitHub sahibine bildirim/e-posta gönderir."""
+    try:
+        kayit = json.load(open(os.path.join(KOK, "kayit.json"), encoding="utf-8"))
+    except FileNotFoundError:
+        return
+    simdi = dt.datetime.now(dt.timezone.utc)
+    yeni = [(k, v) for k, v in kayit.items() if v.get("durum") == "hata" and not v.get("uyarildi")
+            and simdi - dt.datetime.fromisoformat(v["zaman"]) < dt.timedelta(minutes=30)]
+    if not yeni:
+        return
+    govde = "\n\n".join(f"**{k}**\n```\n{v.get('hata','')[:600]}\n```" for k, v in yeni)
+    sh("gh", "issue", "create", "--title", f"Paylaşım hatası: {', '.join(k for k, _ in yeni)}",
+       "--body", "Robot paylaşamadı. Claude'a haber ver.\n\n" + govde)
+    for k, _ in yeni:
+        kayit[k]["uyarildi"] = True
+    json.dump(kayit, open(os.path.join(KOK, "kayit.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
 def main():
     bitis = dt.datetime.now(dt.timezone.utc) + PENCERE
     while True:
@@ -51,6 +70,7 @@ def main():
             time.sleep(bekle)
         r = sh(sys.executable, os.path.join(KOK, "yayinla.py"))
         print(r.stdout[-3000:], r.stderr[-2000:], flush=True)
+        uyar()
         sh("git", "add", "yayin/kayit.json")
         if sh("git", "diff", "--cached", "--quiet").returncode:
             sh("git", "commit", "-q", "-m", "yayin kaydi (bekci)")
