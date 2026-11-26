@@ -49,5 +49,81 @@
   "medya": "videos/story_sahada1_aksam.mp4",
   "ai_etiketi": true,
   "not": "Meta engeli nedeniyle 18:00 kaçtı, engel kalkınca yeniden"
+ },
+ {
+  "id": "v3-dogru-bilgi-sabah",
+  "zaman": "2026-11-27T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_v3_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "v3-dogru-bilgi",
+  "zaman": "2026-11-27T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_video3_dogru_bilgi_v1.mp4",
+  "kapak_ms": 10600,
+  "ai_etiketi": true,
+  "metin": "WhatsApp gruplarında dolaşan bilgiyi kontrol etmek 2 dakika. Dört resmi kapı 👇\n\n1️⃣ Sigortan yatıyor mu? e-Devlet → SGK Tescil ve Hizmet Dökümü. Hangi işyerinden kaç gün prim yatmış, tek tek görürsün.\n2️⃣ Ne zaman emekli olurum? e-Devlet → \"Normal Şartlarda Ne Zaman Emekli Olabilirim?\" İşe başladığın yılı gir; kaç yaşında ve kaç gün primle emekli olabileceğini gösterir.\n3️⃣ Belgem geçerli mi? Bazı mesleklerde belge zorunlu: ustalık belgesi, meslek okulu diploması ya da mesleki yeterlilik belgesi. e-Devlet → MYK Mesleki Yeterlilik Belgesi Sorgulama.\n4️⃣ Takıldığın yerde Alo 170: çalışma hayatı, sigorta ve İş Kurumu soruları için 7 gün 24 saat açık. alo170.gov.tr üzerinden yazışarak da sorabilirsin.\n\nBizim kuralımız da bu: Her rakamın kaynağı yazılı.\nRakam bizden, yorum senden.\n\nKaynak: turkiye.gov.tr, Sosyal Güvenlik Kurumu ve Mesleki Yeterlilik Kurumu hizmetleri; Çalışma ve Sosyal Güvenlik Bakanlığı, Alo 170 (alo170.gov.tr).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#edevlet #sigorta #emeklilik #alo170 #doğrubilgi #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "v3-dogru-bilgi-aksam",
+  "zaman": "2026-11-27T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_v3_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "t1-robot-sabah",
+  "zaman": "2026-11-28T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_tekno1_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "t1-robot",
+  "zaman": "2026-11-28T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_tekno1_robot_v1.mp4",
+  "kapak_ms": 2000,
+  "ai_etiketi": true,
+  "metin": "Robotlar kaynakçının yerini alacak mı? 🤖\n\n📌 Geçen yıl dünyada fabrikalara kurulan her 100 robottan 16'sı kaynak ve lehim işi için.\n📌 Robot tekrar eden işte çok iyi: aynı parçaya aynı dikişi binlerce kez, yorulmadan atar. Otomobil fabrikası tam bunun yeri.\n📌 Ama her yeni parça için yeniden programlanması gerekir. Tek seferlik işte, tamirde, şantiyede, boru hattında hala ustanın gözü ve eli lazım.\n📌 Parçayı yerleştiren, ayarını yapan, dikişi kontrol eden yine bir insan.\n📌 Türkiye'de fabrikalarda yaklaşık 31 bin robot çalışıyor: imalatta her 10.000 çalışana 52 robot.\n\nSen robotla mı çalışırdın, robotsuz mu? Yorumlara yaz.\n\nKaynak: Uluslararası Robotik Federasyonu, 2025 verisi (Anadolu Ajansı, 3 Ekim 2026); TWI, Kaynak Enstitüsü; Yaskawa Motoman.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#teknoloji #robot #kaynak #kaynakçı #sanayi #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "t1-robot-aksam",
+  "zaman": "2026-11-28T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_tekno1_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
  }
 ]
