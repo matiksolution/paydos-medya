@@ -123,7 +123,7 @@ def fb_story(p):
 
 ISLEM = {("instagram", "reel"): ig_reel, ("instagram", "story"): ig_story, ("facebook", "reel"): fb_reel,
          ("instagram", "post"): ig_post, ("facebook", "post"): fb_post, ("facebook", "story"): fb_story}
-ERKEN = dt.timedelta(minutes=8)   # GitHub zamanlayıcısı gecikebildiği için en fazla 8 dk erken çıkabilir
+ERKEN = dt.timedelta(minutes=0)   # saatinde paylaşımı bekçi yapar; zamanlayıcı yalnızca yedek
 EN_FAZLA_DENEME = 3
 
 

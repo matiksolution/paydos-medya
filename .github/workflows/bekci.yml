@@ -5,7 +5,7 @@ on:
     paths: ["yayin/bekci_iste.txt"]
 permissions:
   contents: write
-concurrency: yayin
+concurrency: bekci
 jobs:
   ilk:
     runs-on: ubuntu-latest

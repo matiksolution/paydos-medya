@@ -39,7 +39,10 @@ def main():
     while True:
         zs = bekleyenler(bitis)
         if not zs:
-            print("Bu pencerede bekleyen paylaşım yok.")
+            kalan = (bitis - dt.datetime.now(dt.timezone.utc)).total_seconds()
+            print(f"Bu pencerede bekleyen paylaşım yok; pencere sonuna kadar {int(max(kalan,0))} sn bekleniyor.", flush=True)
+            if kalan > 0:
+                time.sleep(kalan)
             return
         z = zs[0]
         bekle = (z - dt.datetime.now(dt.timezone.utc)).total_seconds() - 20
