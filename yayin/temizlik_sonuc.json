@@ -1,18 +1,10 @@
 {
  "silinen": {
-  "17982334155131380": {
-   "ok": false,
-   "hata": "(#10) Insufficient permissions to access this data"
-  },
-  "1007995818471920": {
+  "2271797863685865": {
    "ok": true,
    "veri": {
     "success": true
    }
-  },
-  "1015096441654070": {
-   "ok": false,
-   "hata": "Unsupported delete request. Object with ID '1015096441654070' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
   }
  },
  "ig_stories": {
@@ -110,14 +102,6 @@
   "veri": {
    "data": [
     {
-     "post_id": "1015096441654070",
-     "status": "published",
-     "creation_time": "1795710838",
-     "media_type": "video",
-     "url": "https://facebook.com/stories/122094681237568018/UzpfSVNDOjEwMTUwOTY0NDgzMjA3MzY=/?view_single=1",
-     "media_id": "2271797863685865"
-    },
-    {
      "post_id": "3101778663487227",
      "status": "published",
      "creation_time": "1795710820",
@@ -136,7 +120,7 @@
    ],
    "paging": {
     "cursors": {
-     "before": "QVFIVHpGVmFSRU1jT2ZAvU1hyU1diRkpDNnNraE84bFVpRDVzLVAzdXJCMUFZAeGpWa1RRMTZAobEVSeFptcEEyM0hCcHFxaVRaWWVsZAEpZAUktLVF9TTHl0Q21R",
+     "before": "QVFIVDRad0hXLWIydFJYSzdzMDdPR2QtQ2pXb1F1Rkx1VkJjUDhUVGVXaWcyNEZAxbmM2SVFDQ19zVWd2U3BKaHRJUk1DOTdUZA2J6LWFiYTFmQnh6c1BUVU53",
      "after": "QVFIVGRrcVNkSEFqbk1BSlYxdEIwcVBtQW9FTEU1RXhONkFCb3pHcmF0dWhJMmNQMXNOcnJ3LVZASeFZAtUTJobWRybTRFQlRlZAEhONmNuUEFkcks3UzFVRmd3"
     }
    }
