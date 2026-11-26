@@ -1,0 +1,28 @@
+name: Paydos temizlik
+on:
+  workflow_dispatch: {}
+  push:
+    paths: ["yayin/temizlik_iste.txt"]
+permissions:
+  contents: write
+concurrency: yayin
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Paylasim yapmadan kontrol
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: python yayin/temizlik.py
+      - name: Sonucu sakla
+        run: |
+          git config user.name "paydos-robot"
+          git config user.email "robot@users.noreply.github.com"
+          git add -A yayin/
+          git diff --cached --quiet || (git commit -m "temizlik" && git pull --rebase -q && git push)
