@@ -108,8 +108,8 @@
    "instagram",
    "facebook"
   ],
-  "medya": "videos/paydos_tekno1_robot_v1.mp4",
-  "kapak_ms": 2000,
+  "medya": "videos/paydos_tekno1_robot_v2.mp4",
+  "kapak_ms": 1500,
   "ai_etiketi": true,
   "metin": "Robotlar kaynakçının yerini alacak mı? 🤖\n\n📌 Geçen yıl dünyada fabrikalara kurulan her 100 robottan 16'sı kaynak ve lehim işi için.\n📌 Robot tekrar eden işte çok iyi: aynı parçaya aynı dikişi binlerce kez, yorulmadan atar. Otomobil fabrikası tam bunun yeri.\n📌 Ama her yeni parça için yeniden programlanması gerekir. Tek seferlik işte, tamirde, şantiyede, boru hattında hala ustanın gözü ve eli lazım.\n📌 Parçayı yerleştiren, ayarını yapan, dikişi kontrol eden yine bir insan.\n📌 Türkiye'de fabrikalarda yaklaşık 31 bin robot çalışıyor: imalatta her 10.000 çalışana 52 robot.\n\nSen robotla mı çalışırdın, robotsuz mu? Yorumlara yaz.\n\nKaynak: Uluslararası Robotik Federasyonu, 2025 verisi (Anadolu Ajansı, 3 Ekim 2026); TWI, Kaynak Enstitüsü; Yaskawa Motoman.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#teknoloji #robot #kaynak #kaynakçı #sanayi #paydosmuhabbeti",
   "durum": "taslak"
@@ -146,7 +146,7 @@
    "instagram",
    "facebook"
   ],
-  "medya": "videos/paydos_sahada2_ucak_v1.mp4",
+  "medya": "videos/paydos_sahada2_ucak_v2.mp4",
   "kapak_ms": 5330,
   "ai_etiketi": true,
   "metin": "Kalkışta öyle bir an var ki, bir motor dursa bile pilot frene basmaz. ✈️\n\nHer kalkıştan önce pilotlar hesap yapar: uçağın ağırlığı, pistin uzunluğu, rüzgar, hava sıcaklığı. Bu hesaptan üç hız çıkar:\n\n1️⃣ Karar hızı: Bu hıza gelmeden ciddi bir arıza olursa kalkış kesilir, uçak pistte durur. Bu hızı geçtikten sonra durmaya pist yetmeyebilir; o yüzden bir motor dursa bile uçak tek motorla havalanır.\n2️⃣ Burun kaldırma hızı: Pilot kumandayı yavaşça çeker, burun kalkar, tekerler yerden kesilir. Erken çekerse kuyruk piste sürtebilir.\n3️⃣ Güvenli tırmanma hızı: Bir motor dursa bile uçağın güvenle tırmanabileceği hız.\n\nOrta boy bir yolcu uçağı genelde saatte 250 ile 300 km arasında havalanır.\n\nPilotlara selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: Airbus Safety First; SKYbrary (Rejected Takeoff) ve FAA belgesi; Aerospaceweb.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #pilot #havacılık #uçak #kalkış #paydosmuhabbeti",
@@ -222,7 +222,7 @@
    "instagram",
    "facebook"
   ],
-  "medya": "videos/paydos_sahada3_mikser_v1.mp4",
+  "medya": "videos/paydos_sahada3_mikser_v2.mp4",
   "kapak_ms": 5070,
   "ai_etiketi": true,
   "metin": "Beton mikserinin tamburu yol boyunca neden hiç durmadan döner? 🚛\n\n📌 İçinde beton var: çimento, kum, çakıl, su ve katkı. Hepsi beton santralinde tartılıp tambura doldurulur.\n📌 Tamburun içinde iki sarmal kanat var. Tambur bir yöne döndükçe kanatlar betonu karıştırır ve içeri doğru iter.\n📌 Yolda yavaş döner. Durursa ağır taşlar dibe çöker, beton ayrışır.\n📌 Şantiyede tambur ters döner; aynı kanatlar betonu dışarı iter, oluktan akar.\n📌 Beton koyulaştıysa şantiyede su eklenmez. Standart, beton döküm yerine geldikten sonra su oranını artıracak su ilavesine izin vermez. Kıvam gerekirse katkıyla ayarlanır ve irsaliyeye yazılır.\n\nBeton bekleyen bir malzeme değil: Ne kadar erken dökülürse o kadar iyi.\n\nMikser şoförlerine selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: ABD patent belgeleri 7722243 ve 7510319; Pavement Interactive; Türkiye Hazır Beton Birliği Akademi, Teknik Bülten 21 (TS EN 206 md. 7.5, TS 13515).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #betonmikseri #hazırbeton #inşaat #şantiye #paydosmuhabbeti",
@@ -336,7 +336,7 @@
    "instagram",
    "facebook"
   ],
-  "medya": "videos/paydos_sahada4_elektrik_v1.mp4",
+  "medya": "videos/paydos_sahada4_elektrik_v2.mp4",
   "kapak_ms": 5040,
   "ai_etiketi": true,
   "metin": "Elektriği kesmeden hatta çalışılır mı? Çalışılır. Sahadaki adı: canlı bakım. ⚡\n\nHat kesilince o hattan beslenen herkes elektriksiz kalır. Bakımda elektrik akmaya devam etsin diye bu yöntem var. Üç yolun da amacı aynı: Akımın ustanın vücudundan geçmesini önlemek.\n\n1️⃣ Yalıtkan çubuk: Usta hattan belli bir mesafede durur, işi uzun yalıtkan bir çubukla yapar.\n2️⃣ Yalıtkan eldiven: Usta yalıtkan eldiven ve kolluk giyer, yalıtılmış bir sepetten hatta uzanır.\n3️⃣ Çıplak el: Usta hatla aynı gerilime getirilir. Aradaki fark sıfır olunca akım vücudundan geçmez, telde duran kuş gibi. Ama artık direğe ve yere yaklaşmamak zorunda.\n\n📌 Türkiye'de iletim hatlarında ilk canlı bakım 2014'te Ankara'da yapıldı; ekip 380 kV'luk hatta ilk kez iletkene dokundu.\n\nBu iş, eğitimli ve yetkili ekiplerin işi. Evde bile sigortayı kapatmadan elektriğe dokunma.\n\nHat ustalarına selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: ABD İş Sağlığı ve Güvenliği İdaresi (OSHA) 1910.269 rehberi; Elektrik Mühendisleri Odası yayınları; TEİAŞ açıklaması (Posta, 30 Ağustos 2014).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #elektrik #canlıbakım #hatustası #işgüvenliği #paydosmuhabbeti",
@@ -412,10 +412,10 @@
    "instagram",
    "facebook"
   ],
-  "medya": "videos/paydos_sahada5_tunel_v1.mp4",
-  "kapak_ms": 8300,
+  "medya": "videos/paydos_sahada5_tunel_v2.mp4",
+  "kapak_ms": 1500,
   "ai_etiketi": true,
-  "metin": "İstanbul Boğazı'nın altında, deniz yüzeyinden 106 metre aşağıda bir tünel var. Onu bu makine açtı. 🚇\n\n📌 Önünde dev bir kesici kafa döner; üzerindeki diskler kayayı ve toprağı kırar.\n📌 Kırılan toprak bir helezonla, sonra bantla geriye taşınır, tünelden dışarı çıkar.\n📌 Makine ilerledikçe arkasında tünelin duvarı örülür: Fabrikada dökülmüş beton parçaları bir kol yerine koyar, parçalar birleşir, halka olur.\n📌 Püf noktası: Makine ileri gitmek için yeni koyduğu halkaya yaslanır. Hidrolik pistonlar halkayı iter, makine bir adım öne çıkar. Kaz, ör, it. Tekrar.\n📌 Avrasya Tüneli'ni açan makinenin kazı çapı 13,7 metreydi; günde 8-10 metre ilerleyerek Boğaz'ın altındaki 3.344 metreyi kazdı.\n\nTünelcilere selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: Güney Avustralya Hükümeti T2D projesi tünel makinesi bilgi notu; Türkiye Gazetesi; Habertürk; Şantiye dergisi; Posta.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #tünel #avrasyatüneli #inşaat #mühendislik #paydosmuhabbeti",
+  "metin": "Avrasya Tüneli: İstanbul Boğazı'nın altında, deniz yüzeyinden 106 metre aşağıda. Onu bu makine açtı. 🚇\n\n📌 Önünde dev bir kesici kafa döner; üzerindeki diskler kayayı ve toprağı kırar.\n📌 Kırılan toprak bir helezonla, sonra bantla geriye taşınır, tünelden dışarı çıkar.\n📌 Makine ilerledikçe arkasında tünelin duvarı örülür: Fabrikada dökülmüş beton parçaları bir kol yerine koyar, parçalar birleşir, halka olur.\n📌 Püf noktası: Makine ileri gitmek için yeni koyduğu halkaya yaslanır. Hidrolik pistonlar halkayı iter, makine bir adım öne çıkar. Kaz, ör, it. Tekrar.\n📌 Avrasya Tüneli'ni açan makinenin kazı çapı 13,7 metreydi; günde 8-10 metre ilerleyerek Boğaz'ın altındaki 3.344 metreyi kazdı.\n\nTünelcilere selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: Güney Avustralya Hükümeti T2D projesi tünel makinesi bilgi notu; Türkiye Gazetesi; Habertürk; Şantiye dergisi; Posta.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #tünel #avrasyatüneli #inşaat #mühendislik #paydosmuhabbeti",
   "durum": "taslak"
  },
  {
