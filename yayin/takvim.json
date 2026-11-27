@@ -317,41 +317,41 @@
   "durum": "taslak"
  },
  {
-  "id": "s4-elektrik-sabah",
+  "id": "s6-maden",
+  "zaman": "2026-12-04T08:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_sahada6_maden_v1.mp4",
+  "kapak_ms": 3000,
+  "ai_etiketi": true,
+  "metin": "4 Aralık, Dünya Madenciler Günü. ⛏️\n\nEkmeğini yerin yüzlerce metre altından çıkaran insanlar var: madenciler.\n\n📌 Grizulu ocakta her madenci, en az 30 dakika oksijen veren ferdi kurtarıcıyı yanında taşımak zorunda.\n📌 Galerilere temiz hava basılır; hava hızı saniyede 0,5 metreden az olamaz. Metan sürekli ölçülür.\n📌 Yer altında günde en çok 7,5, haftada en çok 37,5 saat çalışılır. Zorunlu haller dışında fazla mesai yaptırılamaz.\n📌 Linyit ve taşkömürü ocaklarında yer altında çalışanın ücreti, asgari ücretin iki katından az olamaz.\n📌 Acil durum planı altı ayda bir yenilenir, tatbikat en geç altı ayda bir yapılır.\n\nBu kuralların birçoğu 2014'ten sonra yazıldı. 13 Mayıs 2014'te Soma'da 301 madencimizi kaybettik. Hepsini rahmetle anıyoruz.\n\nFerdi kurtarıcını yanından ayırma, tatbikatı ciddiye al.\nMadencilerimize selam olsun.\n\nKaynak: Çalışma ve Sosyal Güvenlik Bakanlığı, Çalışma Süreleri ve Ücret el kitabı; İş Kanunu md. 63; 6552 sayılı Kanun ile Maden Kanunu'na eklenen ücret hükmü; Maden İşyerlerinde İş Sağlığı ve Güvenliği Yönetmeliği ve değişiklikleri (Resmî Gazete, 24 Eylül 2014 ve 24 Mart 2016).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#dünyamadencilergünü #madenci #4aralık #işgüvenliği #soma #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "s6-maden-aksam",
+  "zaman": "2026-12-04T08:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada6_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "s6-maden-anma",
   "zaman": "2026-12-04T10:30:00+03:00",
   "tur": "story",
   "aglar": [
    "instagram",
    "facebook"
   ],
-  "medya": "videos/story_sahada4_sabah.jpg",
+  "medya": "videos/story_sahada6_anma.jpg",
   "ai_etiketi": false,
-  "durum": "taslak"
- },
- {
-  "id": "s4-elektrik",
-  "zaman": "2026-12-04T18:00:00+03:00",
-  "tur": "reel",
-  "aglar": [
-   "instagram",
-   "facebook"
-  ],
-  "medya": "videos/paydos_sahada4_elektrik_v2.mp4",
-  "kapak_ms": 5040,
-  "ai_etiketi": true,
-  "metin": "Elektriği kesmeden hatta çalışılır mı? Çalışılır. Sahadaki adı: canlı bakım. ⚡\n\nHat kesilince o hattan beslenen herkes elektriksiz kalır. Bakımda elektrik akmaya devam etsin diye bu yöntem var. Üç yolun da amacı aynı: Akımın ustanın vücudundan geçmesini önlemek.\n\n1️⃣ Yalıtkan çubuk: Usta hattan belli bir mesafede durur, işi uzun yalıtkan bir çubukla yapar.\n2️⃣ Yalıtkan eldiven: Usta yalıtkan eldiven ve kolluk giyer, yalıtılmış bir sepetten hatta uzanır.\n3️⃣ Çıplak el: Usta hatla aynı gerilime getirilir. Aradaki fark sıfır olunca akım vücudundan geçmez, telde duran kuş gibi. Ama artık direğe ve yere yaklaşmamak zorunda.\n\n📌 Türkiye'de iletim hatlarında ilk canlı bakım 2014'te Ankara'da yapıldı; ekip 380 kV'luk hatta ilk kez iletkene dokundu.\n\nBu iş, eğitimli ve yetkili ekiplerin işi. Evde bile sigortayı kapatmadan elektriğe dokunma.\n\nHat ustalarına selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: ABD İş Sağlığı ve Güvenliği İdaresi (OSHA) 1910.269 rehberi; Elektrik Mühendisleri Odası yayınları; TEİAŞ açıklaması (Posta, 30 Ağustos 2014).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #elektrik #canlıbakım #hatustası #işgüvenliği #paydosmuhabbeti",
-  "durum": "taslak"
- },
- {
-  "id": "s4-elektrik-aksam",
-  "zaman": "2026-12-04T18:15:00+03:00",
-  "tur": "story",
-  "aglar": [
-   "instagram",
-   "facebook"
-  ],
-  "medya": "videos/story_sahada4_aksam.mp4",
-  "ai_etiketi": true,
   "durum": "taslak"
  },
  {
@@ -427,6 +427,44 @@
    "facebook"
   ],
   "medya": "videos/story_sahada5_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "s4-elektrik-sabah",
+  "zaman": "2026-12-08T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada4_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "s4-elektrik",
+  "zaman": "2026-12-08T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_sahada4_elektrik_v2.mp4",
+  "kapak_ms": 5040,
+  "ai_etiketi": true,
+  "metin": "Elektriği kesmeden hatta çalışılır mı? Çalışılır. Sahadaki adı: canlı bakım. ⚡\n\nHat kesilince o hattan beslenen herkes elektriksiz kalır. Bakımda elektrik akmaya devam etsin diye bu yöntem var. Üç yolun da amacı aynı: Akımın ustanın vücudundan geçmesini önlemek.\n\n1️⃣ Yalıtkan çubuk: Usta hattan belli bir mesafede durur, işi uzun yalıtkan bir çubukla yapar.\n2️⃣ Yalıtkan eldiven: Usta yalıtkan eldiven ve kolluk giyer, yalıtılmış bir sepetten hatta uzanır.\n3️⃣ Çıplak el: Usta hatla aynı gerilime getirilir. Aradaki fark sıfır olunca akım vücudundan geçmez, telde duran kuş gibi. Ama artık direğe ve yere yaklaşmamak zorunda.\n\n📌 Türkiye'de iletim hatlarında ilk canlı bakım 2014'te Ankara'da yapıldı; ekip 380 kV'luk hatta ilk kez iletkene dokundu.\n\nBu iş, eğitimli ve yetkili ekiplerin işi. Evde bile sigortayı kapatmadan elektriğe dokunma.\n\nHat ustalarına selam olsun. Sen hangi işin perde arkasını merak ediyorsun? Yorumlara yaz.\n\nKaynak: ABD İş Sağlığı ve Güvenliği İdaresi (OSHA) 1910.269 rehberi; Elektrik Mühendisleri Odası yayınları; TEİAŞ açıklaması (Posta, 30 Ağustos 2014).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#sahadanasılçalışır #elektrik #canlıbakım #hatustası #işgüvenliği #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "s4-elektrik-aksam",
+  "zaman": "2026-12-08T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_sahada4_aksam.mp4",
   "ai_etiketi": true,
   "durum": "taslak"
  }
