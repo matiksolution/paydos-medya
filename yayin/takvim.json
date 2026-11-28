@@ -51,44 +51,6 @@
   "not": "Meta engeli nedeniyle 18:00 kaçtı, engel kalkınca yeniden"
  },
  {
-  "id": "v3-dogru-bilgi-sabah",
-  "zaman": "2026-11-27T10:30:00+03:00",
-  "tur": "story",
-  "aglar": [
-   "instagram",
-   "facebook"
-  ],
-  "medya": "videos/story_v3_sabah.jpg",
-  "ai_etiketi": false,
-  "durum": "taslak"
- },
- {
-  "id": "v3-dogru-bilgi",
-  "zaman": "2026-11-27T18:00:00+03:00",
-  "tur": "reel",
-  "aglar": [
-   "instagram",
-   "facebook"
-  ],
-  "medya": "videos/paydos_video3_dogru_bilgi_v1.mp4",
-  "kapak_ms": 10600,
-  "ai_etiketi": true,
-  "metin": "WhatsApp gruplarında dolaşan bilgiyi kontrol etmek 2 dakika. Dört resmi kapı 👇\n\n1️⃣ Sigortan yatıyor mu? e-Devlet → SGK Tescil ve Hizmet Dökümü. Hangi işyerinden kaç gün prim yatmış, tek tek görürsün.\n2️⃣ Ne zaman emekli olurum? e-Devlet → \"Normal Şartlarda Ne Zaman Emekli Olabilirim?\" İşe başladığın yılı gir; kaç yaşında ve kaç gün primle emekli olabileceğini gösterir.\n3️⃣ Belgem geçerli mi? Bazı mesleklerde belge zorunlu: ustalık belgesi, meslek okulu diploması ya da mesleki yeterlilik belgesi. e-Devlet → MYK Mesleki Yeterlilik Belgesi Sorgulama.\n4️⃣ Takıldığın yerde Alo 170: çalışma hayatı, sigorta ve İş Kurumu soruları için 7 gün 24 saat açık. alo170.gov.tr üzerinden yazışarak da sorabilirsin.\n\nBizim kuralımız da bu: Her rakamın kaynağı yazılı.\nRakam bizden, yorum senden.\n\nKaynak: turkiye.gov.tr, Sosyal Güvenlik Kurumu ve Mesleki Yeterlilik Kurumu hizmetleri; Çalışma ve Sosyal Güvenlik Bakanlığı, Alo 170 (alo170.gov.tr).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#edevlet #sigorta #emeklilik #alo170 #doğrubilgi #paydosmuhabbeti",
-  "durum": "taslak"
- },
- {
-  "id": "v3-dogru-bilgi-aksam",
-  "zaman": "2026-11-27T18:15:00+03:00",
-  "tur": "story",
-  "aglar": [
-   "instagram",
-   "facebook"
-  ],
-  "medya": "videos/story_v3_aksam.mp4",
-  "ai_etiketi": true,
-  "durum": "taslak"
- },
- {
   "id": "t1-robot-sabah",
   "zaman": "2026-11-28T10:30:00+03:00",
   "tur": "story",
@@ -427,6 +389,44 @@
    "facebook"
   ],
   "medya": "videos/story_sahada5_aksam.mp4",
+  "ai_etiketi": true,
+  "durum": "taslak"
+ },
+ {
+  "id": "v3-dogru-bilgi-sabah",
+  "zaman": "2026-12-07T10:30:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_v3_sabah.jpg",
+  "ai_etiketi": false,
+  "durum": "taslak"
+ },
+ {
+  "id": "v3-dogru-bilgi",
+  "zaman": "2026-12-07T18:00:00+03:00",
+  "tur": "reel",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/paydos_video3_dogru_bilgi_v1.mp4",
+  "kapak_ms": 10600,
+  "ai_etiketi": true,
+  "metin": "WhatsApp gruplarında dolaşan bilgiyi kontrol etmek 2 dakika. Dört resmi kapı 👇\n\n1️⃣ Sigortan yatıyor mu? e-Devlet → SGK Tescil ve Hizmet Dökümü. Hangi işyerinden kaç gün prim yatmış, tek tek görürsün.\n2️⃣ Ne zaman emekli olurum? e-Devlet → \"Normal Şartlarda Ne Zaman Emekli Olabilirim?\" İşe başladığın yılı gir; kaç yaşında ve kaç gün primle emekli olabileceğini gösterir.\n3️⃣ Belgem geçerli mi? Bazı mesleklerde belge zorunlu: ustalık belgesi, meslek okulu diploması ya da mesleki yeterlilik belgesi. e-Devlet → MYK Mesleki Yeterlilik Belgesi Sorgulama.\n4️⃣ Takıldığın yerde Alo 170: çalışma hayatı, sigorta ve İş Kurumu soruları için 7 gün 24 saat açık. alo170.gov.tr üzerinden yazışarak da sorabilirsin.\n\nBizim kuralımız da bu: Her rakamın kaynağı yazılı.\nRakam bizden, yorum senden.\n\nKaynak: turkiye.gov.tr, Sosyal Güvenlik Kurumu ve Mesleki Yeterlilik Kurumu hizmetleri; Çalışma ve Sosyal Güvenlik Bakanlığı, Alo 170 (alo170.gov.tr).\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#edevlet #sigorta #emeklilik #alo170 #doğrubilgi #paydosmuhabbeti",
+  "durum": "taslak"
+ },
+ {
+  "id": "v3-dogru-bilgi-aksam",
+  "zaman": "2026-12-07T18:15:00+03:00",
+  "tur": "story",
+  "aglar": [
+   "instagram",
+   "facebook"
+  ],
+  "medya": "videos/story_v3_aksam.mp4",
   "ai_etiketi": true,
   "durum": "taslak"
  },
