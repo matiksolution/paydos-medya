@@ -70,8 +70,11 @@
   "zaman": "2026-11-28T11:07:54.615192+00:00"
  },
  "t1-robot-sabah:facebook": {
-  "durum": "isleniyor",
-  "zaman": "2026-11-28T11:07:56.429812+00:00",
-  "deneme": 0
+  "durum": "yayinda",
+  "sonuc": {
+   "success": true,
+   "post_id": "1846674166664663"
+  },
+  "zaman": "2026-11-28T11:08:03.018421+00:00"
  }
 }
