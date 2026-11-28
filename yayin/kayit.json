@@ -85,8 +85,12 @@
   "zaman": "2026-11-28T15:01:18.937698+00:00"
  },
  "t1-robot:facebook": {
-  "durum": "isleniyor",
-  "zaman": "2026-11-28T15:01:20.346061+00:00",
-  "deneme": 0
+  "durum": "yayinda",
+  "sonuc": {
+   "success": true,
+   "message": "Video is Processing. To check the status of the video, please follow the instructions listed at https://developers.facebook.com/docs/video-api/guides/reels-publishing#get-the-upload-status.",
+   "post_id": "122097190659568018"
+  },
+  "zaman": "2026-11-28T15:01:29.916891+00:00"
  }
 }
