@@ -59,8 +59,7 @@
    "facebook"
   ],
   "medya": "videos/story_tekno1_sabah.jpg",
-  "ai_etiketi": false,
-  "durum": "taslak"
+  "ai_etiketi": false
  },
  {
   "id": "t1-robot",
@@ -73,8 +72,7 @@
   "medya": "videos/paydos_tekno1_robot_v2.mp4",
   "kapak_ms": 1500,
   "ai_etiketi": true,
-  "metin": "Robotlar kaynakçının yerini alacak mı? 🤖\n\n📌 Geçen yıl dünyada fabrikalara kurulan her 100 robottan 16'sı kaynak ve lehim işi için.\n📌 Robot tekrar eden işte çok iyi: aynı parçaya aynı dikişi binlerce kez, yorulmadan atar. Otomobil fabrikası tam bunun yeri.\n📌 Ama her yeni parça için yeniden programlanması gerekir. Tek seferlik işte, tamirde, şantiyede, boru hattında hala ustanın gözü ve eli lazım.\n📌 Parçayı yerleştiren, ayarını yapan, dikişi kontrol eden yine bir insan.\n📌 Türkiye'de fabrikalarda yaklaşık 31 bin robot çalışıyor: imalatta her 10.000 çalışana 52 robot.\n\nSen robotla mı çalışırdın, robotsuz mu? Yorumlara yaz.\n\nKaynak: Uluslararası Robotik Federasyonu, 2025 verisi (Anadolu Ajansı, 3 Ekim 2026); TWI, Kaynak Enstitüsü; Yaskawa Motoman.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#teknoloji #robot #kaynak #kaynakçı #sanayi #paydosmuhabbeti",
-  "durum": "taslak"
+  "metin": "Robotlar kaynakçının yerini alacak mı? 🤖\n\n📌 Geçen yıl dünyada fabrikalara kurulan her 100 robottan 16'sı kaynak ve lehim işi için.\n📌 Robot tekrar eden işte çok iyi: aynı parçaya aynı dikişi binlerce kez, yorulmadan atar. Otomobil fabrikası tam bunun yeri.\n📌 Ama her yeni parça için yeniden programlanması gerekir. Tek seferlik işte, tamirde, şantiyede, boru hattında hala ustanın gözü ve eli lazım.\n📌 Parçayı yerleştiren, ayarını yapan, dikişi kontrol eden yine bir insan.\n📌 Türkiye'de fabrikalarda yaklaşık 31 bin robot çalışıyor: imalatta her 10.000 çalışana 52 robot.\n\nSen robotla mı çalışırdın, robotsuz mu? Yorumlara yaz.\n\nKaynak: Uluslararası Robotik Federasyonu, 2025 verisi (Anadolu Ajansı, 3 Ekim 2026); TWI, Kaynak Enstitüsü; Yaskawa Motoman.\nSeslendirme ve müzik yapay zeka ile üretilmiştir.\n\n#teknoloji #robot #kaynak #kaynakçı #sanayi #paydosmuhabbeti"
  },
  {
   "id": "t1-robot-aksam",
@@ -85,8 +83,7 @@
    "facebook"
   ],
   "medya": "videos/story_tekno1_aksam.mp4",
-  "ai_etiketi": true,
-  "durum": "taslak"
+  "ai_etiketi": true
  },
  {
   "id": "s2-ucak-sabah",
